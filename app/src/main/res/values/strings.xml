@@ -1,4 +1,30 @@
 <resources>
     <string name="app_name">Pocket RF</string>
     <string name="action_settings">Settings</string>
+    <string-array name="list_view_titles">
+        <item>Field Regions</item>
+        <item>Dish Gain</item>
+        <item>EARFCN Calculator</item>
+        <item>Distance to RADHAZ Boundaries</item>
+        <item>ICNIRP RF Reference Levels</item>
+        <item>EIRP at a Distance</item>
+        <item>Units Converison</item>
+        <item>IM Calculator</item>
+        <item>VSWR Calculator</item>
+        <item>FCC Restricted Bands</item>
+        <item>Harmonics Calculator</item>
+    </string-array>
+    <string-array name="list_view_descriptions">
+        <item>Calculate the distance to near and far field regions</item>
+        <item>Estimate dish gain and beamwidth</item>
+        <item>E-UTRA mobile communications band details</item>
+        <item>Determine safe distances from RF sources (ICNIRP)</item>
+        <item>Human exposure limits to radio-frequency fields</item>
+        <item>Determine EIRP from measured E-field and vice versa</item>
+        <item>Conversion of power, field strength and dB values</item>
+        <item>Two frequency inter-modulation interference calculations</item>
+        <item>VSWR from forward and reverse power</item>
+        <item>FCC Rules part 15.205 - Restricted Bands of Operation</item>
+        <item>Frequency of harmonics up to 20th harmonic</item>
+    </string-array>
 </resources>

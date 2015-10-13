@@ -8,6 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 public class DefaultActivity extends AppCompatActivity {
 
@@ -26,6 +28,7 @@ public class DefaultActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        addListItems();
     }
 
     @Override
@@ -49,4 +52,18 @@ public class DefaultActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    /**
+     * Add list items to ListView
+     */
+    private void addListItems(){
+
+        final ListView listView = (ListView)findViewById(R.id.listView);
+        String[] titles = getResources().getStringArray(R.array.list_view_titles);
+        String[] descriptions = getResources().getStringArray(R.array.list_view_descriptions);
+
+        ArrayAdapter<String> adapter = new DefaultArrayAdapter(getApplicationContext(),titles,descriptions);
+        listView.setAdapter(adapter);
+
+      }
 }

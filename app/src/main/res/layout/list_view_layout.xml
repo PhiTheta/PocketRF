@@ -7,12 +7,13 @@
         android:id="@+id/list_title"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:gravity="center_vertical"
         android:text="Example application"
-        android:textSize="16sp"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:textSize="22dp"
+        android:textColor="@android:color/black"/>
 
 </TableRow>
     <TableRow>
@@ -20,13 +21,12 @@
     <TextView
         android:id="@+id/list_description"
         android:layout_width="fill_parent"
-        android:layout_height="26dip"
-        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
         android:layout_alignParentLeft="true"
         android:ellipsize="marquee"
         android:singleLine="true"
         android:text="Description"
-        android:textSize="12sp"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:textSize="18dp"
+        android:textColor="@android:color/darker_gray"/>
     </TableRow>
     </TableLayout>

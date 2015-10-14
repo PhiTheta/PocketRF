@@ -29,6 +29,7 @@ public class DefaultActivity extends AppCompatActivity {
             }
         });
         addListItems();
+
     }
 
     @Override
@@ -64,6 +65,8 @@ public class DefaultActivity extends AppCompatActivity {
 
         ArrayAdapter<String> adapter = new DefaultArrayAdapter(getApplicationContext(),titles,descriptions);
         listView.setAdapter(adapter);
+
+
 
       }
 }

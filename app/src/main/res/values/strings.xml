@@ -5,8 +5,8 @@
         <item>Field Regions</item>
         <item>Dish Gain</item>
         <item>EARFCN Calculator</item>
-        <item>Distance to RADHAZ Boundaries</item>
-        <item>ICNIRP RF Reference Levels</item>
+        <item>RADHAZ Boundaries</item>
+        <item>ICNIRP Levels</item>
         <item>EIRP at a Distance</item>
         <item>Units Converison</item>
         <item>IM Calculator</item>
@@ -27,4 +27,5 @@
         <item>FCC Rules part 15.205 - Restricted Bands of Operation</item>
         <item>Frequency of harmonics up to 20th harmonic</item>
     </string-array>
+
 </resources>

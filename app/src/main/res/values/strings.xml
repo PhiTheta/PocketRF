@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">Pocket RF</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_field_region">Field Regions</string>
+    <string name="desciption_activity_field_region">Calculate the distance to near and far field regions</string>
+    <string name="freq_mhz">Frequency (MHz)</string>
+    <string name="linear_dimension">Linear Aperture (m)</string>
+    <string name="linear_dimension_tip">The longest linear dimension of the antenna, (diagonal for rectangular antennas, diameter for circular antennas) </string>
+    <string name="is_circular">Circular Polarization</string>
     <string-array name="list_view_titles">
         <item>Field Regions</item>
         <item>Dish Gain</item>
@@ -27,9 +33,5 @@
         <item>FCC Rules part 15.205 - Restricted Bands of Operation</item>
         <item>Frequency of harmonics up to 20th harmonic</item>
     </string-array>
-
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_field_region">FieldRegionActivity</string>
 
 </resources>

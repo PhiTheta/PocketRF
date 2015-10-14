@@ -21,4 +21,9 @@ public class QuickTools {
         return bd.floatValue();
     }
 
+    /**
+     * speed of light in a vacuum, x1,000,000 m/s
+     */
+    public static float speedOfLight = 299.8f;
+
 }

@@ -38,7 +38,9 @@ public class DefaultArrayAdapter extends ArrayAdapter<String> {
             rowView = inflater.inflate(R.layout.list_view_layout, null);
             holder = new ViewHolder();
             holder.title=(TextView)rowView.findViewById(R.id.list_title);
-            holder.description = (TextView)rowView.findViewById(R.id.list_description);
+            TextView description = (TextView)rowView.findViewById(R.id.list_description);
+            description.setAlpha(0.33f);
+            holder.description = description;
             rowView.setTag(holder);
         }else{
             holder = (ViewHolder)convertView.getTag();

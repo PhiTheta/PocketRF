@@ -21,7 +21,14 @@
         <activity
             android:name=".FieldRegionActivity"
             android:label="@string/title_activity_field_region"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".DishGain"
+            android:label="@string/title_dish_gain"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
         </activity>
     </application>
 

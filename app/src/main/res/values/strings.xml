@@ -5,8 +5,12 @@
     <string name="desciption_activity_field_region">Calculate the distance to near and far field regions</string>
     <string name="freq_mhz">Frequency (MHz)</string>
     <string name="linear_dimension">Linear Aperture (m)</string>
+    <string name="diameter">Diameter (m)</string>
     <string name="linear_dimension_tip">The longest linear dimension of the antenna, (diagonal for rectangular antennas, diameter for circular antennas) </string>
     <string name="is_circular">Circular Polarization</string>
+    <string name="description_dish_gain">Estimate dish gain and beamwidth</string>
+    <string name="efficiency">Aperture Efficiency</string>
+    <string name="title_dish_gain">Dish Gain</string>
     <string-array name="list_view_titles">
         <item>Field Regions</item>
         <item>Dish Gain</item>

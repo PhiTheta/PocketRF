@@ -4,5 +4,6 @@
     <color name="colorPrimaryDark">#1976D2</color>
     <color name="colorPrimaryLight">#E3F2FD</color>
     <color name="subHeadingBackground">#BBDEFB</color>
-    <color name="colorAccent">#4CAF50</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="colorSubtitles">#000</color>
 </resources>

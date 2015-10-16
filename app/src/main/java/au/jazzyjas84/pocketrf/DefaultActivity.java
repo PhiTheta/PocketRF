@@ -37,7 +37,8 @@ public class DefaultActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                //TODO fix this
+                Snackbar.make(view, "I'm not just a peanut", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -67,8 +68,19 @@ public class DefaultActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * Start FieldRegions activity
+     */
     private void showFieldRegions(){
         Intent intent = new Intent(this,FieldRegionActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * Start DishGain activity
+     */
+    private void showDishGain(){
+        Intent intent = new Intent(this,DishGain.class);
         startActivity(intent);
     }
 
@@ -90,6 +102,9 @@ public class DefaultActivity extends AppCompatActivity {
                 switch (position){
                     case 0:
                         showFieldRegions();
+                        break;
+                    case 1:
+                        showDishGain();
                         break;
                 }
 

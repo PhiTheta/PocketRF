@@ -11,6 +11,9 @@
     <string name="description_dish_gain">Estimate dish gain and beamwidth</string>
     <string name="efficiency">Aperture Efficiency</string>
     <string name="title_dish_gain">Dish Gain</string>
+    <string name="description_radhaz_boundaries">Determine safe distances from RF sources (ICNIRP)</string>
+    <string name="rf_power">RF Power Output (W)</string>
+    <string name="antenna_gain">Antenna Gain (dBi)</string>
     <string-array name="list_view_titles">
         <item>Field Regions</item>
         <item>Dish Gain</item>
@@ -37,5 +40,6 @@
         <item>FCC Rules part 15.205 - Restricted Bands of Operation</item>
         <item>Frequency of harmonics up to 20th harmonic</item>
     </string-array>
+    <string name="title_activity_distance_to_radhaz">DistanceToRadhaz</string>
 
 </resources>

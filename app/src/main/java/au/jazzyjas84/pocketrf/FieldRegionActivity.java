@@ -62,6 +62,7 @@ public class FieldRegionActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState, outPersistentState);
         boolean chkState = chkCircular.isChecked();
         outState.putBoolean("chkState",chkState);
+        check_circular(chkCircular);
     }
 
     public void check_circular(View view){
@@ -179,17 +180,6 @@ public class FieldRegionActivity extends AppCompatActivity {
         return radiatingDistance;
     }
 
-//---- wavelengthVacuum ----//
-    /**
-     * used to convert frequency to wavelength, assumes vacuum
-     * @return float representing the wavelength in metres, returns zero if frequencyMhz is less than or equal to zero
-     */
-    private float wavelengthVacuum(){
-        if (freqMhz > 0)
-            return QuickTools.speedOfLight/freqMhz;
-        return 0f;
-    }
-
 //---- ReactiveNearDistance ----//
     /**
      * used to calculate and store the upper bound of the reactive near field region in metres.
@@ -197,7 +187,7 @@ public class FieldRegionActivity extends AppCompatActivity {
      * @return true if lambda > 0 , else false
      */
     private boolean ReactiveNearDistance(){
-        float lambda = wavelengthVacuum();
+        float lambda = QuickTools.wavelengthVacuum(freqMhz);
         if(lambda > 0){
             if(isCircular){
                 reactiveDistance=linearAperture*linearAperture/(4*lambda);
@@ -216,7 +206,7 @@ public class FieldRegionActivity extends AppCompatActivity {
      * @return true if lambda > 0 , else false
      */
     private boolean RadiatingNearDistance(){
-        float lambda = wavelengthVacuum();
+        float lambda = QuickTools.wavelengthVacuum(freqMhz);
         if(lambda > 0){
             radiatingDistance=(lambda/4) + 2*linearAperture*linearAperture/lambda;
             return true;

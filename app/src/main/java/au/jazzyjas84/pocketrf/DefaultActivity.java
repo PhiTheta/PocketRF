@@ -85,6 +85,14 @@ public class DefaultActivity extends AppCompatActivity {
     }
 
     /**
+     * Start DistanceToRadhaz activity
+     */
+    private void showDistanceToRadhaz(){
+        Intent intent = new Intent(this,DistanceToRadhaz.class);
+        startActivity(intent);
+    }
+
+    /**
      * Add list items to ListView
      */
     private void addListItems(){
@@ -105,6 +113,9 @@ public class DefaultActivity extends AppCompatActivity {
                         break;
                     case 1:
                         showDishGain();
+                        break;
+                    case 3:
+                        showDistanceToRadhaz();
                         break;
                 }
 

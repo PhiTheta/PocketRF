@@ -70,7 +70,7 @@
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/input_linear_aperture"
+                android:id="@+id/input_DtR_linear_aperture"
                 android:singleLine="true"/>
             <View
                 android:layout_width="match_parent"

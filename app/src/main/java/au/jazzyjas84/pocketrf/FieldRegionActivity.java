@@ -2,16 +2,12 @@ package au.jazzyjas84.pocketrf;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.InputType;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /**
@@ -51,7 +47,7 @@ public class FieldRegionActivity extends AppCompatActivity {
         freq_mhz = (EditText)findViewById(R.id.input_freq_mhz);
         freq_mhz.setRawInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
 
-        linear_aperture = (EditText)findViewById(R.id.input_linear_aperture);
+        linear_aperture = (EditText)findViewById(R.id.input_FR_linear_aperture);
         linear_aperture.setRawInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
 
         txt_result = (TextView)findViewById(R.id.txtResult);

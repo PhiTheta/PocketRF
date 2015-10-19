@@ -33,7 +33,8 @@
         <activity
             android:name=".DistanceToRadhaz"
             android:label="@string/title_activity_distance_to_radhaz"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" >
         </activity>
     </application>
 

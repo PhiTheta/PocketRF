@@ -23,7 +23,7 @@
             android:showDividers="end|beginning"
             android:elevation="1dp">
 
-            <TextView android:text="@string/desciption_activity_field_region"
+            <TextView android:text="@string/description_dish_gain"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:paddingTop="@dimen/activity_vertical_margin"
@@ -71,7 +71,7 @@
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/input_linear_aperture"
+                android:id="@+id/input_DG_linear_aperture"
                 android:singleLine="true"/>
             <View
                 android:layout_width="match_parent"

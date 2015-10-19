@@ -2,8 +2,6 @@ package au.jazzyjas84.pocketrf;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -67,7 +65,7 @@ public class DistanceToRadhaz extends AppCompatActivity {
         // onAxisGain should not equal -1234
         if(onAxisGain == -1234f){return false;}
 
-        // genPubLimit should be calculated
+        // genPubLimit should be calculated if all other variables are ok
         genPubLimit = QuickTools.getLimit(freqMhz,QuickTools.GEN_PUB_AVG_E)*
                 QuickTools.getLimit(freqMhz,QuickTools.GEN_PUB_AVG_H);
 
